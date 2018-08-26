@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <form id = "friendQuiz" name="friendQuiz">
+            <h2>Name?</h2>
+            <input id="name" type="text" name="name">
+
+            
+            <p>I like the Outdoors</p>
+            <input type="radio" value="1" name="question1">Strongly Disagree
+            <br>
+            <input type="radio" value="2" name="question1">Disagree
+            <br>
+            <input type="radio" value="3" name="question1">Ambivalent
+            <br>
+            <input type="radio" value="4" name="question1">Agree
+            <br>
+            <input type="radio" value="5" name="question1">Strongly Agree
+            <br>           
+            <br> 
+            <p>I like Movies</p>
+            <input type="radio" value="1" name="question2">Strongly Disagree
+            <br>
+            <input type="radio" value="2" name="question2">Disagree
+            <br>
+            <input type="radio" value="3" name="question2">Ambivalent
+            <br>
+            <input type="radio" value="4" name="question2">Agree
+            <br>
+            <input type="radio" value="5" name="question2">Strongly Agree
+            <br>           
+            <br> 
+            <p>I like Video Games</p>
+            <input type="radio" value="1" name="question3">Strongly Disagree
+            <br>
+            <input type="radio" value="2" name="question3">Disagree
+            <br>
+            <input type="radio" value="3" name="question3">Ambivalent
+            <br>
+            <input type="radio" value="4" name="question3">Agree
+            <br>
+            <input type="radio" value="5" name="question3">Strongly Agree
+            <br>           
+            <br> 
+            <p>I Question the purpose of existence in a Universe governed by chaos</p>
+            <input type="radio" value="1" name="question4">Strongly Disagree
+            <br>
+            <input type="radio" value="2" name="question4">Disagree
+            <br>
+            <input type="radio" value="3" name="question4">Ambivalent
+            <br>
+            <input type="radio" value="4" name="question4">Agree
+            <br>
+            <input type="radio" value="5" name="question4">Strongly Agree
+            <br>           
+            <br> 
+            <p>I like watching comedy shows</p>
+            <input type="radio" value="1" name="question5">Strongly Disagree
+            <br>
+            <input type="radio" value="2" name="question5">Disagree
+            <br>
+            <input type="radio" value="3" name="question5">Ambivalent
+            <br>
+            <input type="radio" value="4" name="question5">Agree
+            <br>
+            <input type="radio" value="5" name="question5">Strongly Agree
+            <br>           
+            <br> 
+            <p>I like to drink alcohol</p>
+            <input type="radio" value="1" name="question6">Strongly Disagree
+            <br>
+            <input type="radio" value="2" name="question6">Disagree
+            <br>
+            <input type="radio" value="3" name="question6">Ambivalent
+            <br>
+            <input type="radio" value="4" name="question6">Agree
+            <br>
+            <input type="radio" value="5" name="question6">Strongly Agree
+            <br>           
+            <br> 
+            <p>I drink alcohol to stave off the existential dread that is always with me</p>
+            <input type="radio" value="1" name="question7">Strongly Disagree
+            <br>
+            <input type="radio" value="2" name="question7">Disagree
+            <br>
+            <input type="radio" value="3" name="question7">Ambivalent
+            <br>
+            <input type="radio" value="4" name="question7">Agree
+            <br>
+            <input type="radio" value="5" name="question7">Strongly Agree
+            <br>           
+            <br> 
+            <p>I like watching sports</p>
+            <input type="radio" value="1" name="question8">Strongly Disagree
+            <br>
+            <input type="radio" value="2" name="question8">Disagree
+            <br>
+            <input type="radio" value="3" name="question8">Ambivalent
+            <br>
+            <input type="radio" value="4" name="question8">Agree
+            <br>
+            <input type="radio" value="5" name="question8">Strongly Agree
+            <br>           
+            <br> 
+            <p>I see sports as futile effort to achieve purpose</p>
+            <input type="radio" value="1" name="question9">Strongly Disagree
+            <br>
+            <input type="radio" value="2" name="question9">Disagree
+            <br>
+            <input type="radio" value="3" name="question9">Ambivalent
+            <br>
+            <input type="radio" value="4" name="question9">Agree
+            <br>
+            <input type="radio" value="5" name="question9">Strongly Agree
+            <br>           
+            <br>             <p>I can watch game of thrones without complaining about how the books are better</p>
+            <input type="radio" value="1" name="question10">Strongly Disagree
+            <br>
+            <input type="radio" value="2" name="question10">Disagree
+            <br>
+            <input type="radio" value="3" name="question10">Ambivalent
+            <br>
+            <input type="radio" value="4" name="question10">Agree
+            <br>
+            <input type="radio" value="5" name="question10">Strongly Agree
+        </form>
+        <br>           
+            <br> 
+        <button id="submit" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Submit</button>
+
+
+        <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+              
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Your Best Compatibility match is:</h4>
+                    </div>
+                    <div class="modal-body">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+              
+                </div>
+              </div>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <script>
+var friendScores = [];
+var user = {};
+var friendList = [];
+
+function friend(name, array){
+    this.name = name;
+    this.scores = array
+        }
+function friendscore(name, score){
+    this.name = name;
+    this.compatibilityScore = score
+        }
+
+function friendCheck() {
+    var currentURL = window.location.origin;
+    $.ajax({ url: currentURL + "/api/friends", method: "GET" })
+    .then(function(friends) {
+
+    for (var i = 0; i < friends.length; i++) {
+        console.log(friends[i].name+ "<-----friends name");
+        console.log(friends[i].scores+ "<-----friends score");
+        var compScore = compare(user, friends[i])
+        var Newfriend = new friendscore(friends[i].name, compScore)
+        friendList.push(Newfriend);
+    }
+    friendList.sort(compareNumbers)
+    modalSet(friendList[0]);
+  });
+}
+
+function compare(user, friend){
+    var c = [];
+    for(j=0;j<10;j++){
+        c.push(Math.abs(user.scores[j]-friend.scores[j]))
+    }
+    score = sum(c)
+    return score
+}
+
+function sum(arr){
+    var s = 0
+    for(k=0;k<arr.length;k++){
+        s = s+arr[k];
+    }
+    return s;
+}
+
+function compareNumbers(a, b) {
+  return a.compatibilityScore - b.compatibilityScore;
+}
+
+function modalSet(friend){
+    $(".modal-body").html("Name: "+friend.name+"<br><br>Compatibilit Score(lower is better): "+friend.compatibilityScore);
+}
+
+        $("#submit").on("click", function(event){
+            event.preventDefault();
+            name= document.friendQuiz.name.value
+           var question1 = document.friendQuiz.question1.value
+           var question2 = document.friendQuiz.question2.value
+           var question3 = document.friendQuiz.question3.value
+           var question4 = document.friendQuiz.question4.value
+           var question5 = document.friendQuiz.question5.value
+           var question6 = document.friendQuiz.question6.value
+           var question7 = document.friendQuiz.question7.value
+           var question8 = document.friendQuiz.question8.value
+           var question9 = document.friendQuiz.question9.value
+           var question10 = document.friendQuiz.question10.value
+
+            array.push(question1, question2, question3, question4, question5, question6, question7, question8, question9, question10);
+               
+            var Friend = new friend(name, array);
+            user = new friend(name, array);
+          
+            friendCheck();
+            $.post("/api/friends", Friend);
+        
+        })
+
+    </script>
+</html>
